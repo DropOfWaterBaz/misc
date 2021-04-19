@@ -1,0 +1,269 @@
+/*input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+}
+
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+input[type=radio]:not(old):checked + label > span:before{
+  display     : block;
+  width       : 1em;
+  color       : rgb(153,204,102);
+  font-size   : 0.875em;
+  line-height : 1em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  font-weight : bold;
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 0.125em;
+  background       : rgb(153,204,102);
+  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+*/
+/*topPage {
+  padding-top: 0;
+  height: 20px;
+  width: 100%;
+  background-color: grey;
+  position: fixed;
+}*/
+
+/********** USER INPUT STYLINGS******************/
+/* Hide the browser's default radio button */
+
+div{
+  display: flex;
+  width: 10%;
+}
+
+inputContainer{
+  margin-top: 50px;
+  position: flex;
+  width:100%;
+  height: 50%;
+}
+
+/*
+input {
+  position: flex;
+}*/
+
+/*Create a custom radio button */
+inputContainer #strongAg,
+inputContainer #midAg,
+inputContainer #minAg,
+inputContainer #indifferent,
+inputContainer #minDis,
+inputContainer #midDis,
+inputContainer #strongDis {
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+label {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 10px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #ffffff;
+}
+
+/* Strong Agree Button*/
+#strongAgInput{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#strongAg {
+ border: 3px solid darkblue;
+ height: 35px;
+ width: 35px;
+ margin-right: 0;
+}
+
+input:hover + #strongAg,
+input:checked + #strongAg {
+  background-color: darkblue !important;
+}
+
+/* Middle Agree Button*/
+#midAgInput{
+  opacity:0;
+  height: 0;
+  width: 0;
+}
+
+#midAg {
+  border: 3px solid blue;
+  height: 30px;
+  width: 30px;
+  margin-right: 0;
+}
+
+input:hover + #midAg,
+input:checked + #midAg {
+  background-color:blue !important;
+}
+
+/* Minimal Agree Button*/
+#minAgInput{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#minAg {
+  border: 3px solid cornflowerblue;
+  height: 25px;
+  width: 25px;
+}
+
+input:hover + #minAg,
+input:checked + #minAg {
+  background-color:cornflowerblue !important;
+}
+
+/* Indifferent Button*/
+#indifferentInput{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#indifferent {
+  border: 3px solid grey;
+  height: 20px;
+  width: 20px;
+}
+
+input:hover + #indifferent,
+input:checked + #indifferent {
+  background-color:grey!important;
+}
+
+/* Minimal Disagree Button*/
+#minDisInput{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#minDis {
+  border: 3px solid darkgoldenrod;
+  height: 25px;
+  width: 25px;
+}
+
+input:hover + #minDis,
+input:checked + #minDis {
+  background-color:darkgoldenrod !important;
+}
+
+
+/* Middle Disagree Button*/
+#midDisInput{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#midDis {
+  border: 3px solid sienna;
+  height: 30px;
+  width: 30px;
+}
+
+input:hover + #midDis,
+input:checked + #midDis {
+  background-color:sienna !important;
+}
+
+/* Strong Disagree Button*/
+#strongDisInput{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#strongDis {
+  border: 3px solid saddlebrown;
+  height: 35px;
+  width: 35px;
+}
+
+input:hover + #strongDis,
+input:checked + #strongDis {
+  background-color:saddlebrown !important;
+}
+
+/* Customize the label (the container) *
+.bonta{
+  display: block;
+  position: flex;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}*
+
+
+.checkmark{
+  position: flex;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 50%;
+}*/
+

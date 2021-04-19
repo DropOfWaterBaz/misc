@@ -1,0 +1,329 @@
+div.topPage{
+  height: 5%;
+  font-weight: bolder;
+  width: 100%;
+  background-color: rgba(207, 49, 49, 0.575);
+  padding-left: 43%;
+}
+
+/********** USER INPUT STYLINGS******************/
+/* Hide the browser's default radio button */
+.questionOne,
+.questionTwo,
+.questionThree,
+.questionFour,
+.questionFive,
+.questionSix,
+.questionSeven,
+.questionEight,
+.questionNine,
+.questionTen,
+.questionEleven,
+.questionTwelve,
+.questionThirteen,
+.questionFourteen,
+.questionFifteen,
+.questionSixteen{
+  margin-top: 6%;
+  text-align: center;
+  font-weight: bold;
+}
+
+inputContainer{
+  display: flex ;
+  justify-content: center;
+  margin-top: 1%;
+  width:100%;
+  height: 50%;
+}
+
+/*Create a custom radio button */
+inputContainer #strongAg,
+inputContainer #midAg,
+inputContainer #minAg,
+inputContainer #indifferent,
+inputContainer #minDis,
+inputContainer #midDis,
+inputContainer #strongDis {
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+  align-self: center;
+}
+
+label {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 10px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #ffffff;
+}
+
+/* Strong Agree Button*/
+#strongAgInput1,
+#strongAgInput2,
+#strongAgInput3,
+#strongAgInput4,
+#strongAgInput5,
+#strongAgInput6,
+#strongAgInput7,
+#strongAgInput8,
+#strongAgInput9,
+#strongAgInput10,
+#strongAgInput11,
+#strongAgInput12,
+#strongAgInput13,
+#strongAgInput14,
+#strongAgInput15,
+#strongAgInput16 {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#strongAg {
+ border: 3px solid darkblue;
+ height: 35px;
+ width: 35px;
+}
+
+input:hover + #strongAg,
+input:checked + #strongAg {
+  background-color: darkblue !important;
+}
+
+/* Middle Agree Button*/
+#midAgInput1,
+#midAgInput2,
+#midAgInput3,
+#midAgInput4,
+#midAgInput5,
+#midAgInput6,
+#midAgInput7,
+#midAgInput8,
+#midAgInput9,
+#midAgInput10,
+#midAgInput11,
+#midAgInput12,
+#midAgInput13,
+#midAgInput14,
+#midAgInput15,
+#midAgInput16 {
+  opacity:0;
+  height: 0;
+  width: 0;
+}
+
+#midAg {
+  border: 3px solid blue;
+  height: 30px;
+  width: 30px;
+}
+
+input:hover + #midAg,
+input:checked + #midAg {
+  background-color:blue !important;
+}
+
+/* Minimal Agree Button*/
+#minAgInput1,
+#minAgInput2,
+#minAgInput3,
+#minAgInput4,
+#minAgInput5,
+#minAgInput6,
+#minAgInput7,
+#minAgInput8,
+#minAgInput9,
+#minAgInput10,
+#minAgInput11,
+#minAgInput12,
+#minAgInput13,
+#minAgInput14,
+#minAgInput15,
+#minAgInput16 {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#minAg {
+  border: 3px solid cornflowerblue;
+  height: 25px;
+  width: 25px;
+}
+
+input:hover + #minAg,
+input:checked + #minAg {
+  background-color:cornflowerblue !important;
+}
+
+/* Indifferent Button*/
+#indifferentInput1,
+#indifferentInput2,
+#indifferentInput3,
+#indifferentInput4,
+#indifferentInput5,
+#indifferentInput6,
+#indifferentInput7,
+#indifferentInput8,
+#indifferentInput9,
+#indifferentInput10,
+#indifferentInput11,
+#indifferentInput12,
+#indifferentInput13,
+#indifferentInput14,
+#indifferentInput15,
+#indifferentInput16{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#indifferent {
+  border: 3px solid grey;
+  height: 20px;
+  width: 20px;
+}
+
+input:hover + #indifferent,
+input:checked + #indifferent {
+  background-color:grey!important;
+}
+
+/* Minimal Disagree Button*/
+#minDisInput1,
+#minDisInput2,
+#minDisInput3,
+#minDisInput4,
+#minDisInput5,
+#minDisInput6,
+#minDisInput7,
+#minDisInput8,
+#minDisInput9,
+#minDisInput10,
+#minDisInput11,
+#minDisInput12,
+#minDisInput13,
+#minDisInput14,
+#minDisInput15,
+#minDisInput16{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#minDis {
+  border: 3px solid darkgoldenrod;
+  height: 25px;
+  width: 25px;
+}
+
+input:hover + #minDis,
+input:checked + #minDis {
+  background-color:darkgoldenrod !important;
+}
+
+/* Middle Disagree Button*/
+#midDisInput1,
+#midDisInput2,
+#midDisInput3,
+#midDisInput4,
+#midDisInput5,
+#midDisInput6,
+#midDisInput7,
+#midDisInput8,
+#midDisInput9,
+#midDisInput10,
+#midDisInput11,
+#midDisInput12,
+#midDisInput13,
+#midDisInput14,
+#midDisInput15,
+#midDisInput16{
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#midDis {
+  border: 3px solid sienna;
+  height: 30px;
+  width: 30px;
+}
+
+input:hover + #midDis,
+input:checked + #midDis {
+  background-color:sienna !important;
+}
+
+/* Strong Disagree Button*/
+#strongDisInput1,
+#strongDisInput2,
+#strongDisInput3,
+#strongDisInput4,
+#strongDisInput5,
+#strongDisInput6,
+#strongDisInput7,
+#strongDisInput8,
+#strongDisInput9,
+#strongDisInput10,
+#strongDisInput11,
+#strongDisInput12,
+#strongDisInput13,
+#strongDisInput14,
+#strongDisInput15,
+#strongDisInput16 {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#strongDis {
+  border: 3px solid saddlebrown;
+  height: 35px;
+  width: 35px;
+}
+
+input:hover + #strongDis,
+input:checked + #strongDis {
+  background-color:saddlebrown !important;
+}
+
+/* NEXT BUTTON */
+button.nextButton{
+  color: white;
+  height: 30px;
+  width: 80px;
+  padding-left: 16px;
+  padding-top: 7px;
+  border-radius: 10%;
+  display: flex;
+  background-color: green;
+  margin-top: 10%;
+  border: 1px solid black;
+  margin-left: 45%;
+  cursor: pointer;
+}
+
+/* HOME BUTTON */
+button.homeButton{
+  color: white;
+  height: 30px;
+  width: 80px;
+  padding-left: 20px;
+  padding-top: 7px;
+  border-radius: 10%;
+  display: flex;
+  background-color: green;
+  margin-top: 10%;
+  border: 1px solid black;
+  margin-left: 45%;
+  cursor: pointer;
+}

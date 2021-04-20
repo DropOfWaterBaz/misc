@@ -5,7 +5,7 @@
   <title>QQ: Personality</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script src="home.js"></script>
+  <script type="text/javascript" src="file:///C:/Users/ronan_1ocg26c/OneDrive%20-%20National%20University%20of%20Ireland,%20Galway/Documents/Work/Grinds/Daniel/FinalYearProject-main/FinalYearProject-main/dbazFYP/FinalYearProject/dbazFYP/home.js"></script>
 </head>
 
 <div class="topPage"> The dbaz Personality Quiz!</div>
@@ -436,71 +436,8 @@
     </inputContainer>
 
 
-  <button type="submit" class="nextButton" onclick="calculatescore()"> Results</button>
-  <script>
-    function calculatescore(){
-    var EISum=0;
-    var SNSum=0; 
-    var TFSum =0;
-    var JPSum = 0;
-    var radios = document.getElementsByTagName('input');
-    var value;
-    for (var i = 0; i < radios.length; i++) {
-      
-      if (radios[i].type === 'radio' && radios[i].checked) {
-        // get value, set checked flag or do whatever you need to
-        key = radios[i].getAttribute('key');
-        value = radios[i].value;
-        question = radios[i].name;   
-        if(key==="EI"){
-          EISum = EISum+ (+value)
-        }
-        else if(key==="SN"){
-          SNSum =SNSum+ (+value)
-        }
-        else if(key==="TF"){
-          TFSum =TFSum+ (+value)
-        }
-        else{
-          JPSum =JPSum+ (+value)
-        }
-        
-      }
-      
-    }
-    var output = "";
-    if (EISum >= 12){
-      output+="E"
-    }
-    else{
-      output+="I"
-    }
-    if (SNSum >= 12){
-      output+="N"
-    }
-    else{
-      output+="S"
-    }
-    if (TFSum >= 12){
-      output+="F"
-    }
-    else{
-      output+="T"
-    }
-    if (JPSum >= 12){
-      output+="P"
-    }
-    else{
-      output+="J"
-    }
-    console.log(EISum) 
-    console.log(SNSum)
-    console.log(TFSum)
-    console.log(JPSum)
-    console.log(output)
-    return output;
-  }
-  </script>
+  <button type="submit" class="nextButton" onclick="document.write(calculatescore())"> Results</button>
+  
 
 </pageContainer>
 

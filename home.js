@@ -58,10 +58,5 @@ app.controller("QuizController", [
     $scope.clicked = function () {
       window.location = "#/resultsPage.html";
     };
-
-    let EISum,
-      SNSum,
-      TFSum,
-      JPSum = 0; // setting sums from inputs
   },
 ]);

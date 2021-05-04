@@ -7,7 +7,7 @@
     <title>QQ: Your Personality</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src=".js"></script>
+    <script src="ESTJ.js"></script>
   </head>
 
   <pageContainer style="width: 100%">
@@ -58,27 +58,37 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content: space-between;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.709;">
                     <img style="height:100%; width:100%" src="https://imgix.pedestrian.tv/content/uploads/2021/04/24/pitbull.jpeg?auto=format&fit=fill&q=65&nrs=40">
                     <p style="text-align:center;">Pitbull (Mr. Worldwide)</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.714;">
                     <img style="height:100%; width:100%"  src="https://dxan6czxprkid.cloudfront.net/posters/judge-judy-poster-400x560.jpg?mtime=20190319155636&focal=none">
                     <p style="text-align:center;">Judge Judy</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.7497;">
                     <img style="height:100%; width:100%" src="https://static.wikia.nocookie.net/theoffice/images/c/c5/Dwight_.jpg/revision/latest?cb=20170701082424">
                     <p style="text-align:center;">Dwight Schrute (The Office US)</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%; flex:.8;">
                     <img style="height:100%; width:100%"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Kamala_Harris_Vice_Presidential_Portrait.jpg/1200px-Kamala_Harris_Vice_Presidential_Portrait.jpg">
                     <p style="text-align:center;">Kamala Harris</p>
                 </div>
 
             </celebContainer>  
+
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
 
     </body>
   </pageContainer>

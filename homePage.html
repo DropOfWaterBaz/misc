@@ -5,19 +5,21 @@
   <title>QQ: Personality</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script type="text/javascript" src="file:///C:/Users/ronan_1ocg26c/OneDrive%20-%20National%20University%20of%20Ireland,%20Galway/Documents/Work/Grinds/Daniel/FinalYearProject-main/FinalYearProject-main/dbazFYP/FinalYearProject/dbazFYP/home.js"></script>
+  <script type="text/javascript" src="/Users/dbaz/Desktop/FYP/home.js"></script>
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <div class="topPage"> The dbaz Personality Quiz!</div>
 
-<pageContainer style="width:100%">
+<pageContainer style="width:100%; justify-content: center;">
 
   <body ng-app="FYP" ng-controller="QuizController">
 
     <div class="questionOne" >I feel comfortable in groups and like working in them.</div>
     <inputContainer>
       Agree
-        <input type="radio" key="EI" ng-model="q1" name="radio1" ng-value="6" id="strongAgInput1">
+        <input type="radio" key="EI" ng-model="q1" name="radio1" ng-value="6" id="strongAgInput1" required>
         <label id="strongAg" for="strongAgInput1"> </label>
 
         <input type="radio" key="EI" ng-model="q1" name="radio1" ng-value="5" id="midAgInput1">
@@ -436,8 +438,11 @@
     </inputContainer>
 
 
-  <button type="submit" class="nextButton" onclick="document.write(calculatescore())"> Results</button>
+  <button type="submit" class="nextButton" onclick="calculateScore()"> Results</button>
   
+ <!----- <form action="file:///Users/dbaz/FYP/homePage.html">
+    <button type="submit" class="homeButton">Home</button>
+</form> --->
 
 </pageContainer>
 

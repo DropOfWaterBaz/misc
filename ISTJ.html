@@ -7,7 +7,7 @@
     <title>QQ: Your Personality</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src=".js"></script>
+    <script src="ISTJ.js"></script>
   </head>
 
   <pageContainer style="width: 100%">
@@ -58,27 +58,37 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content: space-between;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.8217;">
                     <img style="height:100%; width:100%" src="https://cdn.britannica.com/17/172817-050-B5A3AE9B/Angela-Merkel-2012.jpg">
                     <p style="text-align:center;">Angela Merkel</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.6916;">
                     <img style="height:100%; width:100%"  src="https://i.pinimg.com/originals/f6/e4/69/f6e469e0729dbd1935151d6bc671f90b.jpg">
                     <p style="text-align:center;">Raymond Holt (Brooklyn-99)</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.746;">
                     <img style="height:100%; width:100%" src="https://m.media-amazon.com/images/M/MV5BMTQ3ODE3Mjg1NV5BMl5BanBnXkFtZTcwNzA4ODcxNA@@._V1_.jpg">
                     <p style="text-align:center;">Natalie Portman</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.5626;">
                     <img style="height:100%; width:100%"  src="https://media.vanityfair.com/photos/5b06ef6a016c7568e478cabf/9:16/w_747,h_1328,c_limit/Morgan-Freeman-Sexual-Harassment.jpg">
                     <p style="text-align:center;">Morgan Freeman</p>
                 </div>
 
             </celebContainer>  
+
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
 
     </body>
   </pageContainer>

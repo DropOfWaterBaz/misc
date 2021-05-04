@@ -7,7 +7,7 @@
     <title>QQ: Your Personality</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src=".js"></script>
+    <script src="ISFP.js"></script>
   </head>
 
   <pageContainer style="width: 100%">
@@ -18,7 +18,7 @@
                 <header style="font-size: 150%; width:100%; text-align:center;">Your personality is <b>ISFP!</b></header>
                 <div class="deacronym" style="display: flex; justify-content:space-between; margin-bottom:5%; margin-top:3%;"> 
                     <char1><b><u>I</u></b>ntroversion</char1>  
-                    <char2><b><u>S</u></b>einsing</char2>
+                    <char2><b><u>S</u></b>ensing</char2>
                     <char3><b><u>T</u></b>hinking</char3>
                     <char4><b><u>P</u></b>erceiving </char4>
                 </div>
@@ -58,26 +58,36 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content: space-between;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.7904;">
                     <img style="height:100%; width:100%" src="https://www.ladygunn.com/wp-content/uploads/2019/04/BILLIExANGELOKRITIKOS-3.jpg">
                     <p style="text-align:center;">Billie Eilish</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.6669;">
                     <img style="height:100%; width:100%"  src="https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg">Frida Kahlo</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.674;">
                     <img style="height:100%; width:100%" src="https://i.redd.it/slg7d8g8znv51.jpg">
                     <p style="text-align:center;">Harry Potter (Harry Potter)</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.7407;">
                     <img style="height:100%; width:100%"  src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jimi-hendrix-performs-on-stage-at-the-royal-albert-hall-1969-1543341705.jpg">
                     <p style="text-align:center;">Jimi Hendrix</p>
                 </div>
 
             </celebContainer>  
+
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
 
     </body>
   </pageContainer>

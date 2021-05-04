@@ -7,7 +7,7 @@
     <title>QQ: Your Personality</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src=".js"></script>
+    <script src="ESTP.js"></script>
   </head>
 
   <pageContainer style="width: 100%">
@@ -59,27 +59,37 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content: space-between;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.704;">
                     <img style="height:100%; width:100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Madonna_Rebel_Heart_Tour_2015_-_Stockholm_%2823051472299%29_%28cropped%29.jpg/1200px-Madonna_Rebel_Heart_Tour_2015_-_Stockholm_%2823051472299%29_%28cropped%29.jpg">
                     <p style="text-align:center;">Madonna</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
-                    <img style="height:100%; width:100%"  src="https://specials-images.forbesimg.com/imageserve/5fbef39348dbc8b401e7e760/1960x0.jpg?fit=scale">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.7644;">
+                    <img style="height:100%; width:100%"  src="https://www.thesun.co.uk/wp-content/uploads/2018/06/NINTCHDBPICT000366896505.jpg">
                     <p style="text-align:center;">Zlatan Ibrahimović</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:1;">
                     <img style="height:100%; width:100%" src="https://i.guim.co.uk/img/media/3b867d41f1456c337f26456c01eae1e3db6d0181/0_95_4992_2994/master/4992.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=b609667976531dcf70be246181cb21cb">
                     <p style="text-align:center;">Ernest Hemingway</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.75">
                     <img style="height:100%; width:100%"  src="https://static.wikia.nocookie.net/best-music-and-songs/images/3/39/516213_v9_bc.jpg/revision/latest?cb=20190806151809">
                     <p style="text-align:center;">P!NK</p>
                 </div>
 
             </celebContainer>  
+
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
 
     </body>
   </pageContainer>

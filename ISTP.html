@@ -7,7 +7,7 @@
     <title>QQ: Your Personality</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src=".js"></script>
+    <script src="ISTP.js"></script>
   </head>
 
   <pageContainer style="width: 100%">
@@ -57,28 +57,38 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content: space-between;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.8216;">
                     <img style="height:100%; width:100%" src="https://wsbaws-websitefs-prod.s3.amazonaws.com/2020/04/08/15/23/18/a5922f56-705c-459a-949f-d044b764877b/Bear-Grylls-speaker-HS-03232020.jpeg">
                     <p style="text-align:center;">Bear Grylls</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.714;">
                     <img style="height:100%; width:100%"  src="https://i.redd.it/7ufabmiaici41.jpg">
                     <p style="text-align:center;">Scarlett Johansson</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.705">
                     <img style="height:100%; width:100%" src="https://cdn.britannica.com/18/193318-050-BA5E2B8A/Melania-Trump-2016.jpg">
                     <p style="text-align:center;">Melania Trump</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.6666;">
                     <img style="height:100%; width:100%"  src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mcdinjo-ec016mod-1547154552.jpg?crop=1xw:1xh;center,top&resize=480:*">
                     <p style="text-align:center;">Indiana Jones</p>
                 </div>
 
             </celebContainer>  
 
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
+            
     </body>
   </pageContainer>
 </html>

@@ -7,7 +7,7 @@
     <title>QQ: Your Personality</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src=".js"></script>
+    <script src="INFJ.js"></script>
   </head>
 
   <pageContainer style="width: 100%">
@@ -58,27 +58,37 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content: space-between;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.616;">
                     <img style="height:100%; width:100%" src="https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png">
                     <p style="text-align:center;">Lisa Simpson (The Simpsons)</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.8697">
                     <img style="height:100%; width:100%"  src="https://media.resources.festicket.com/www/artists/KendrickLamar_New.jpg">
                     <p style="text-align:center;">Kendrick Lamar</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.801">
                     <img style="height:100%; width:100%" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg">
                     <p style="text-align:center;">Mohandas “Mahatma” Gandhi</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.738;">
                     <img style="height:100%; width:100%"  src="https://m.media-amazon.com/images/M/MV5BMTk1MjM5NDg4MF5BMl5BanBnXkFtZTcwNDg1OTQ4Nw@@._V1_.jpg">
                     <p style="text-align:center;">Nicole Kidman</p>
                 </div>
 
             </celebContainer>  
+
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
 
     </body>
   </pageContainer>

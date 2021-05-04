@@ -7,7 +7,7 @@
     <title>QQ: Your Personality</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src=".js"></script>
+    <script src="ESFJ.js"></script>
   </head>
 
   <pageContainer style="width: 100%">
@@ -58,28 +58,37 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content: space-between;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.654;">
                     <img style="height:100%; width:100%" src="https://thumbor.forbes.com/thumbor/250x382/https://blogs-images.forbes.com/dorothypomerantz/files/2011/09/Spongebob-squarepants.jpg?width=960">
                     <p style="text-align:center;">Spongebob Squarepants</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.665">
                     <img style="height:100%; width:100%"  src="https://m.media-amazon.com/images/M/MV5BMjA5ODI0NzIzNV5BMl5BanBnXkFtZTcwMzM0NjI2Nw@@._V1_.jpg">
                     <p style="text-align:center;">Taylor Swift</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.799;">
                     <img style="height:100%; width:100%" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/american-actress-grace-kelly-in-a-lace-trimmed-top-circa-news-photo-71494788-1552944730.jpg">
                     <p style="text-align:center;">Grace Kelly</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.797;">
                     <img style="height:100%; width:100%"  src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Jimmy_Fallon%2C_Montclair_Film_Festival%2C_2013.jpg">
                     <p style="text-align:center;">Jimmy Fallon</p>
                 </div>
 
             </celebContainer>  
 
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
     </body>
   </pageContainer>
 </html>

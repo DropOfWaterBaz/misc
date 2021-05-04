@@ -7,7 +7,7 @@
     <title>QQ: Your Personality</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src=".js"></script>
+    <script src="ENTP.js"></script>
   </head>
 
   <pageContainer style="width: 100%">
@@ -58,27 +58,36 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content: space-between;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.8338;">
                     <img style="height:100%; width:100%" src="https://i.natgeofe.com/n/37c3c776-b8cb-4be1-988a-cf593c776b88/01-leonardo-da-vinci-book-talk.jpg?w=1200">
                     <p style="text-align:center;">Leonardo da Vinci</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:1;">
                     <img style="height:100%; width:100%"  src="https://pbs.twimg.com/profile_images/537736236132474880/n0ugt0fg_400x400.jpeg">
                     <p style="text-align:center;">Joan Rivers</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:.6666;">
                     <img style="height:100%; width:100%" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg">
                     <p style="text-align:center;">Ryan Reynolds</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
-                    <img style="height:100%; width:100%"  src="https://i.insider.com/5ef3a95f5af6cc722126c8ea?width=700">
-                    <p style="text-align:center;">Benjamin Franklin</p>
+                <div style="height:100%; width: 15%; margin-right:5%;flex: .7525">
+                    <img style="height:100%; width:100%"  src="https://api.time.com/wp-content/uploads/2015/04/465928178.jpg?w=824&quality=70">Anna Kendrick</p>
                 </div>
 
             </celebContainer>  
+
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
 
     </body>
   </pageContainer>

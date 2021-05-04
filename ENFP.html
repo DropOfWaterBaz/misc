@@ -7,7 +7,7 @@
     <script src="ENFP.js"></script>
   </head>
 
-  <pageContainer style="width: 100%">
+  <pageContainer style="width: 85%">
     <body ng-app="FYP" ng-controller="QuizController">
       <imageHeaderContainer>
         <img style="height:15%; width:15%;" src="/Users/dbaz/Desktop/FYP/imgs/ENFP.png"/>
@@ -31,14 +31,14 @@
         <b>Strengths vs. Weaknesses</b>
     </h2>
     <u>Strengths</u>
-    <p>-Curiosity: ENFPs like to experience new things, explore the unknown and learn</p>
-    <p>-Observation: Everything is relevant. Campaigners believe that any small action can effect the outcome in a significant way.</p>
-    <p>-Social Skills: ENFPs tend to be highly social. As a result, they are great communicators, know a wide range of people and are quite enthusiastic. </p>
+    <p>- Curiosity: ENFPs like to experience new things, explore the unknown and learn</p>
+    <p>- Observation: Everything is relevant. Campaigners believe that any small action can effect the outcome in a significant way.</p>
+    <p>- Social Skills: ENFPs tend to be highly social. As a result, they are great communicators, know a wide range of people and are quite enthusiastic. </p>
 
     <u>Weaknesses</u>
-    <p>-Highly Emotional: Emotions are what make us human. However, Campaigners can have mood swings or be prone to stress as a result. </p>
-    <p>-Overthinking: As they tend to look into the deeper meaning of situations, ENFPs can tend to find issues that aren't necessarily there. To them, there is more often more than meets the eye to a situation, but they're not always right. This can result lead to worrying about issues that may not exist.</p>
-    <p>-Poor Concentration: This can also be considered to be the downfall of the ENFP's curiosity. They like to think about possibilities and things that mystify them - something not all too helpful when there's a deadline at midnight tonight.</p>
+    <p>- Highly Emotional: Emotions are what make us human. However, Campaigners can have mood swings or be prone to stress as a result. </p>
+    <p>- Overthinking: As they tend to look into the deeper meaning of situations, ENFPs can tend to find issues that aren't necessarily there. To them, there is more often more than meets the eye to a situation, but they're not always right. This can result lead to worrying about issues that may not exist.</p>
+    <p>- Poor Concentration: This can also be considered to be the downfall of the ENFP's curiosity. They like to think about possibilities and things that mystify them - something not all too helpful when there's a deadline at midnight tonight.</p>
 
     <h2 style="margin-top:5%;">                  
         <b>Careers</b>
@@ -56,27 +56,37 @@
             </h2>
             <celebContainer style="display:flex;width:100%; margin-top: 3%;height:15%; justify-content:center;">
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
+                <div style="height:100%; width: 15%; margin-right:5%;flex:1;">
                     <img style="height:100%; width:100%" src="https://i.guim.co.uk/img/media/d67ee6e706a6e2501f79f539fdbeabcdf4e34f94/93_0_2498_1500/master/2498.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=35f3cccb148d7ba75936b6416f110cb9">
                     <p style="text-align:center;">Mac Miller</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
-                    <img style="height:100%; width:100%"  src="https://upload.wikimedia.org/wikipedia/en/f/f6/Friendsphoebe.jpg">
+                <div style="height:100%; width: 15%; margin-right:5%; flex:0.8190">
+                    <img style="height:100%; width:100%; " src="https://upload.wikimedia.org/wikipedia/en/f/f6/Friendsphoebe.jpg">
                     <p style="text-align:center;">Phoebe Buffay (Friends)</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
-                    <img style="height:100%; width:100%" src="https://cdn.britannica.com/06/160006-050-8A1AEBDB/Anne-Frank.jpg">
+                <div style="height:100%; width: 15%; margin-right:5%;flex: 0.713;">
+                    <img style="height:100%; width:100%; " src="https://cdn.britannica.com/06/160006-050-8A1AEBDB/Anne-Frank.jpg">
                     <p style="text-align:center;">Anne Frank</p>
                 </div>
 
-                <div style="height:100%; width: 15%; margin-right:5%;">
-                    <img style="height:100%; width:100%"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/1200px-CheHigh.jpg">
-                    <p style="text-align:center;">Ernesto "Che" Guevara</p>
+                <div style="height:100%; width: 15%; margin-right:5%;flex:0.7802;">
+                    <img style="height:100%; width:100%; " src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/1200px-CheHigh.jpg">
+                    <p style="text-align:center; ">Ernesto "Che" Guevara</p>
                 </div>
 
             </celebContainer>  
+
+            <p> How do you feel about this result? Let me know in the box below!</p>
+            <form action="javascript:submit()">
+                <textarea name="feedbackBox" id="feedbackBox" placeholder="Feedback"></textarea>
+                <input type="submit" value="submit">
+              </form>
+
+              <form action="/Users/dbaz/Desktop/FYP/homePage.html">
+                <button type="submit" class="homeButton">Home</button>
+            </form>
 
     </body>
   </pageContainer>

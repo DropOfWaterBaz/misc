@@ -1,4 +1,9 @@
-/* ENFP */
+body{
+  font-family:sans-serif;
+  font-size: 1em;
+}
+
+
 imageHeaderContainer{
   display: flex;
   width: 100%;
@@ -12,6 +17,7 @@ width:20%;
 margin-left:3%;
 background-color: rgb(221, 216, 216);
 margin-right: 5%;
+object-fit: cover;
 }
 
 
@@ -72,10 +78,10 @@ label {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  margin: 10px;
+  margin: 1.5%;
   display: block;
   width: 100%;
-  height: 50px;
+  /*height: 50px;*/
   display: flex;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -318,8 +324,8 @@ button.nextButton{
   color: white;
   height: 30px;
   width: 80px;
-  padding-left: 16px;
-  padding-top: 7px;
+  justify-content: center;
+  padding-top: 1%;
   border-radius: 10%;
   display: flex;
   background-color: green;

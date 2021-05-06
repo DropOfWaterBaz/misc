@@ -1,8 +1,21 @@
 body{
   font-family:sans-serif;
   font-size: 1em;
+  display:inline;
+  margin:0 auto;
+  overflow:scroll;
+  justify-content: center;
+  padding:0;
+  width:100% !important;
 }
 
+.intro{
+  font-size: .8em;
+  margin-top:0;
+  text-align:center;
+  width:80%;
+  margin-left:10%;
+}
 
 imageHeaderContainer{
   display: flex;
@@ -10,6 +23,32 @@ imageHeaderContainer{
   height: 10%;
 }
 
+.overlay-container{
+  position:relative;
+  text-align: center;
+}
+
+.centered-text{
+  position: absolute;
+  right:10%;
+  left:10%;
+  color: white;
+  font-size: 1.15em;
+  font-weight: 900;
+  -webkit-text-stroke: .5px black; /* font border width and color */
+  top:15%;
+}
+
+.home img{
+  width:100%!important; 
+  height: 5%;
+  max-height:85px;
+  position: relative;
+  padding:0 !important; 
+  z-index:0;
+  margin:0 !important;
+
+}
 
 img{
 height:20%; 
@@ -21,13 +60,7 @@ object-fit: cover;
 }
 
 
-div.topPage{
-  height: 5%;
-  font-weight: bolder;
-  width: 100%;
-  background-color: rgba(207, 49, 49, 0.575);
-  padding-left: 43%;
-}
+
 
 /********** USER INPUT STYLINGS******************/
 /* Hide the browser's default radio button */
@@ -49,7 +82,7 @@ div.topPage{
 .questionSixteen{
   margin-top: 6%;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 inputContainer{
@@ -57,6 +90,7 @@ inputContainer{
   justify-content: center;
   margin-top: 1%;
   width:100%;
+  font-weight:200;
   height: 50%;
 }
 
@@ -113,7 +147,12 @@ label {
 #strongAg {
  border: 3px solid darkblue;
  height: 35px;
- width: 35px;
+ /*width: 35px;*/
+ max-height: 35px;
+ max-width: 35px;
+ min-width:35px;
+ min-height: 35px;;
+ 
 }
 
 input:hover + #strongAg,
@@ -146,7 +185,11 @@ input:checked + #strongAg {
 #midAg {
   border: 3px solid blue;
   height: 30px;
-  width: 30px;
+  /*width: 30px;*/
+  max-height: 30px;
+  max-width: 30px;
+  min-width:30px;
+  min-height:30px;
 }
 
 input:hover + #midAg,
@@ -179,7 +222,10 @@ input:checked + #midAg {
 #minAg {
   border: 3px solid cornflowerblue;
   height: 25px;
-  width: 25px;
+  /*width: 25px;*/
+  max-height: 25px;
+  max-width: 25px;
+  min-width: 25px;
 }
 
 input:hover + #minAg,
@@ -212,7 +258,10 @@ input:checked + #minAg {
 #indifferent {
   border: 3px solid grey;
   height: 20px;
-  width: 20px;
+  /*width: 20px;*/
+  max-height: 20px;
+  max-width: 20px;
+  min-width: 20px;
 }
 
 input:hover + #indifferent,
@@ -245,7 +294,11 @@ input:checked + #indifferent {
 #minDis {
   border: 3px solid darkgoldenrod;
   height: 25px;
-  width: 25px;
+  /*width: 25px;*/
+  max-height: 25px;
+  max-width: 25px;
+  min-width: 25px;
+
 }
 
 input:hover + #minDis,
@@ -278,7 +331,11 @@ input:checked + #minDis {
 #midDis {
   border: 3px solid sienna;
   height: 30px;
-  width: 30px;
+  /*width: 30px;*/
+  max-height: 30px;
+  max-width: 30px;
+  min-width:30px;
+  min-height:30px;
 }
 
 input:hover + #midDis,
@@ -311,7 +368,11 @@ input:checked + #midDis {
 #strongDis {
   border: 3px solid saddlebrown;
   height: 35px;
-  width: 35px;
+  /*width: 35px;*/
+  max-height: 35px;
+  max-width: 35px;
+  min-width: 35px;
+  min-height:35px;
 }
 
 input:hover + #strongDis,
@@ -319,22 +380,23 @@ input:checked + #strongDis {
   background-color:saddlebrown !important;
 }
 
-/* NEXT BUTTON */
+/* NEXT/RESULTS BUTTON */
 button.nextButton{
   color: white;
-  height: 30px;
+  height: 7%;
+  background:green;
   width: 80px;
   justify-content: center;
-  padding-top: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   border-radius: 10%;
   display: flex;
-  background-color: green;
   margin-top: 10%;
   border: 1px solid black;
   margin-left: 45%;
   cursor: pointer;
 }
-
+   
 /* HOME BUTTON */
 button.homeButton{
   color: white;
